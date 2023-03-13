@@ -1,0 +1,34 @@
+:root{
+  --firstColor: #172556;
+  --firstLigthColor: #2F3F73;
+  --secondLigthColor: #505F90;
+  --firstDarkColor: #07123A;
+  --textColor: #000000;
+  --textLigthColor: #ffffff;
+}
+
+.servicios-cont{
+  height: 100vh;
+  background-color: var(--firstLigthColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios-cont h3{
+  font-size: 2.5rem;
+  color: var(--textLigthColor);
+  text-align: center;
+  padding: 2rem;
+}
+
+.servicios-cont hr{
+  width: 10rem;
+}
+
+
+@media only screen and (max-width: 1500px){
+  .servicios-cont{
+    height: 100%;
+  }
+}

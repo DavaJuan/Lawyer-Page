@@ -1,0 +1,77 @@
+:root{
+  --firstColor: #172556;
+  --firstLigthColor: #2F3F73;
+  --secondLigthColor: #505F90;
+  --firstDarkColor: #07123A;
+  --textColor: #000000;
+  --textLigthColor: #ffffff;
+}
+
+.container-home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(./img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container-home h1{
+  padding: 2rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--textLigthColor);
+}
+
+.container-home p{
+  padding: 2rem;
+  font-size: 1.4rem;
+  color: var(--textLigthColor);
+}
+
+.container-home button{
+  width: 10rem;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: var(--firstLigthColor);
+  color: var(--textLigthColor);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: .5s;
+  text-transform: uppercase;
+}
+
+.container-home button:hover{
+  background-color: var(--firstDarkColor);
+}
+
+
+
+
+@media only screen and (max-width: 690px){
+  .container-home p{
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .container-home h1{
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .container-home h1{
+    font-size: 2rem;
+  }
+
+  .container-home p{
+    font-size: 1rem;
+  }
+
+  .container-home button{
+    width: 9rem;
+  }
+}

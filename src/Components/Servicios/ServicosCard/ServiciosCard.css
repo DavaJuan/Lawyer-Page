@@ -1,0 +1,49 @@
+:root{
+  --firstColor: #172556;
+  --firstLigthColor: #2F3F73;
+  --secondLigthColor: #505F90;
+  --firstDarkColor: #07123A;
+  --textColor: #000000;
+  --textLigthColor: #ffffff;
+}
+
+.card-container{
+  width: 250px;
+  height: 240px;
+  background-color: var(--secondLigthColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  color: var(--textLigthColor);
+  border-radius: 5px;
+  border: 1px solid var(--textLigthColor);
+  box-shadow: 0px 5px  20px var(--textColor);
+}
+
+.card-title{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.img-container img{
+  width: 90px;
+  padding: .5rem;
+}
+
+.card-button button{
+  background-color: var(--firstLigthColor);
+  padding: .7rem;
+  color: var(--textLigthColor);
+  border: 1px solid var(--textLigthColor);
+  cursor: pointer;
+  font-weight: bold;
+  transition: .5s;
+  text-transform: uppercase;
+}
+
+.card-button button:hover{
+  background-color: var(--firstDarkColor);
+}
